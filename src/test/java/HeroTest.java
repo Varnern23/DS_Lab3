@@ -84,4 +84,9 @@ class HeroTest {
 		HeroInterface bender = HeroFactory.createHero(BAD, W);
 		assertNull(bender);
 	}
+	@Test
+	void finalTest() {
+		HeroInterface Legolas = HeroFactory.createHero(E, A);
+		assertEquals(112, Legolas.attack(3));
+	}
 }

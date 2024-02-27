@@ -1,8 +1,9 @@
 
-public class Job {
+public class Warrior extends Job {
+
 
 	public int attack(int val, int str, int dex, int tel) {
-		return 0;
+		return (str * val) + dex;
 	}
 
 }
